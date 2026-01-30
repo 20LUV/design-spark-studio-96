@@ -8,6 +8,7 @@ const designSkills = [
   "Prototyping",
   "HTML & CSS",
   "Bootstrap",
+  "React JS",
   "User Flows",
   "Responsive Design",
 ];
