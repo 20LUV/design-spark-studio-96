@@ -32,7 +32,7 @@ export function About() {
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-elevated">
                 <img
                   src={avatar}
-                  alt="Sarah Chen - UI/UX Designer"
+                  alt="Luv Takkar - UI/UX Designer"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -68,19 +68,19 @@ export function About() {
               className="space-y-4 text-body"
             >
               <p>
-                Hi, I'm Sarah — a product designer with 5+ years of experience
-                creating digital products that put users first. I believe great
-                design is invisible; it just works.
+                Hi, I'm Luv — a passionate UI/UX Designer with experience designing 
+                web and mobile applications that balance business goals with 
+                exceptional user experience.
               </p>
               <p>
-                My process starts with understanding people. Through user
-                research, interviews, and data analysis, I uncover insights that
-                drive design decisions. From there, I move through wireframing,
-                prototyping, and visual design to create cohesive experiences.
+                My process starts with understanding users. Through UX research, 
+                wireframing, and prototyping, I create intuitive designs that 
+                solve real problems. I specialize in building scalable design 
+                systems and working closely with developers for pixel-perfect delivery.
               </p>
               <p>
-                When I'm not pushing pixels, you'll find me exploring hiking
-                trails, practicing calligraphy, or mentoring aspiring designers.
+                Skilled in Figma, Adobe XD, Illustrator, and Photoshop, I bring 
+                ideas to life with attention to detail and a focus on usability.
               </p>
             </motion.div>
 

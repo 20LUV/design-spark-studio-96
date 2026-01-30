@@ -2,17 +2,13 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const designSkills = [
-  "UX Research",
-  "User Interviews",
-  "Wireframing",
-  "User Flows",
-  "Information Architecture",
-  "Prototyping",
   "UI Design",
-  "Design Systems",
-  "Usability Testing",
-  "A/B Testing",
-  "Accessibility",
+  "UX Research",
+  "Wireframing",
+  "Prototyping",
+  "HTML & CSS",
+  "Bootstrap",
+  "User Flows",
   "Responsive Design",
 ];
 
@@ -21,10 +17,6 @@ const tools = [
   { name: "Adobe XD", icon: "💜" },
   { name: "Photoshop", icon: "📷" },
   { name: "Illustrator", icon: "✏️" },
-  { name: "Framer", icon: "⚡" },
-  { name: "Principle", icon: "🔄" },
-  { name: "Miro", icon: "📋" },
-  { name: "Notion", icon: "📝" },
 ];
 
 export function Skills() {

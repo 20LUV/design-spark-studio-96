@@ -4,30 +4,21 @@ import { useRef } from "react";
 const experiences = [
   {
     id: 1,
-    role: "Senior Product Designer",
-    company: "TechFlow Inc.",
-    period: "2022 — Present",
+    role: "UI/UX Designer",
+    company: "Galamine AI (UK)",
+    period: "July 2025 – Present",
     description:
-      "Leading design for the core product team, establishing design systems, and mentoring junior designers. Shipped redesign that increased user retention by 32%.",
-    highlights: ["Design Leadership", "Design Systems", "User Research"],
+      "Designed enterprise platforms including CRMS, CRMS Storefront, and CoreCart Grocery App. Built scalable design systems and worked closely with developers for pixel-perfect delivery.",
+    highlights: ["Enterprise Platforms", "Design Systems", "Pixel-perfect Delivery"],
   },
   {
     id: 2,
-    role: "UI/UX Designer",
-    company: "Creative Studio Co.",
-    period: "2020 — 2022",
+    role: "UI/UX Designer / Developer",
+    company: "Promatics Technologies",
+    period: "Mar 2025 – Jun 2025",
     description:
-      "Designed end-to-end experiences for B2B SaaS products. Led user research initiatives and created interactive prototypes for stakeholder presentations.",
-    highlights: ["B2B SaaS", "Prototyping", "Client Workshops"],
-  },
-  {
-    id: 3,
-    role: "Junior Designer",
-    company: "Digital Agency XYZ",
-    period: "2019 — 2020",
-    description:
-      "Started my design journey working on diverse client projects from e-commerce to mobile apps. Built strong foundation in visual design and UX principles.",
-    highlights: ["Visual Design", "Responsive Web", "Mobile Apps"],
+      "Led end-to-end design for web and mobile apps, improving usability and increasing engagement by 25%.",
+    highlights: ["End-to-end Design", "Web & Mobile Apps", "25% Engagement Increase"],
   },
 ];
 

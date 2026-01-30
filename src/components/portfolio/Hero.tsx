@@ -45,9 +45,7 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="heading-display mb-6"
           >
-            Designing intuitive
-            <br />
-            <span className="gradient-text">digital experiences</span>
+            Hi, I'm <span className="gradient-text">Luv Takkar</span>
           </motion.h1>
 
           <motion.p
@@ -56,9 +54,9 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-body max-w-2xl mx-auto mb-10"
           >
-            I craft user-centered digital products that balance beautiful
-            aesthetics with seamless functionality. From research to final
-            pixels, I bring ideas to life.
+            Passionate UI/UX Designer with experience designing web and mobile
+            applications that balance business goals with exceptional user experience.
+            Skilled in Figma, Adobe XD, Illustrator, and Photoshop.
           </motion.p>
 
           <motion.div
@@ -71,7 +69,7 @@ export function Hero() {
               <a href="#work">View Case Studies</a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#contact">Download Resume</a>
+              <a href="#contact">Get in Touch</a>
             </Button>
           </motion.div>
         </motion.div>

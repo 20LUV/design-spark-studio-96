@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import avatar from "@/assets/avatar.jpg";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -36,9 +37,16 @@ export function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-bold tracking-tight text-foreground"
+          className="flex items-center gap-3"
         >
-          Sarah Chen
+          <img 
+            src={avatar} 
+            alt="Luv Takkar" 
+            className="w-10 h-10 rounded-full object-cover border-2 border-primary/20"
+          />
+          <span className="text-xl font-bold tracking-tight text-foreground">
+            Luv Takkar
+          </span>
         </a>
 
         {/* Desktop Navigation */}
@@ -52,8 +60,8 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <Button variant="hero" size="sm">
-            Resume
+          <Button variant="hero" size="sm" asChild>
+            <a href="#contact">Hire Me</a>
           </Button>
         </div>
 
@@ -91,8 +99,8 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" className="w-full mt-2">
-                Resume
+              <Button variant="hero" className="w-full mt-2" asChild>
+                <a href="#contact">Hire Me</a>
               </Button>
             </div>
           </motion.div>

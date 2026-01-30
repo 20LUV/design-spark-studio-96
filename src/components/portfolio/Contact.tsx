@@ -1,26 +1,20 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Dribbble, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   {
     name: "Email",
-    href: "mailto:hello@sarahchen.design",
+    href: "mailto:luvtakkar@gmail.com",
     icon: Mail,
-    label: "hello@sarahchen.design",
+    label: "luvtakkar@gmail.com",
   },
   {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/sarahchen",
-    icon: Linkedin,
-    label: "/in/sarahchen",
-  },
-  {
-    name: "Dribbble",
-    href: "https://dribbble.com/sarahchen",
-    icon: Dribbble,
-    label: "@sarahchen",
+    name: "Phone",
+    href: "tel:+918288842142",
+    icon: Phone,
+    label: "+91 8288842142",
   },
 ];
 
@@ -57,7 +51,7 @@ export function Contact() {
             transition={{ delay: 0.2 }}
           >
             <Button variant="hero" size="xl" asChild>
-              <a href="mailto:hello@sarahchen.design">
+              <a href="mailto:luvtakkar@gmail.com">
                 Start a Conversation
                 <ArrowUpRight className="w-5 h-5" />
               </a>

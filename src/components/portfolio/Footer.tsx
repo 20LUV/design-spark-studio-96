@@ -12,7 +12,7 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             className="text-sm text-muted-foreground"
           >
-            © {currentYear} Sarah Chen. Designed with ♥ and lots of coffee.
+            © {currentYear} Luv Takkar. Designed with ♥ and passion for great UX.
           </motion.p>
 
           <motion.div
