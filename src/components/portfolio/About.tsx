@@ -84,28 +84,6 @@ export function About() {
               </p>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.4 }}
-              className="grid grid-cols-3 gap-6 mt-10"
-            >
-              {[
-                { value: "5+", label: "Years Experience" },
-                { value: "40+", label: "Projects Delivered" },
-                { value: "15+", label: "Happy Clients" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <div className="text-3xl md:text-4xl font-bold text-foreground">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </motion.div>
           </div>
         </motion.div>
       </div>
