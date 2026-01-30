@@ -1,38 +1,52 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import caseStudy1 from "@/assets/case-study-1.jpg";
-import caseStudy2 from "@/assets/case-study-2.jpg";
-import caseStudy3 from "@/assets/case-study-3.jpg";
+import caseStudyCorecart from "@/assets/case-study-corecart.png";
+import caseStudyCrms from "@/assets/case-study-crms.png";
+import caseStudyStorefront from "@/assets/case-study-storefront.png";
+import caseStudyMemoneet from "@/assets/case-study-memoneet.png";
 
 const caseStudies = [
   {
     id: 1,
-    title: "FinFlow Banking App",
-    category: "Mobile App Design",
+    title: "Memoneet – AI Learning Assistant",
+    category: "Mobile App · AI UX · EdTech",
     description:
-      "Redesigning the mobile banking experience to increase user engagement by 45% and reduce support tickets by 30%.",
-    image: caseStudy1,
-    tags: ["UX Research", "UI Design", "Prototyping"],
+      "Memoneet is an AI-powered learning assistant designed for students, enabling them to ask questions, explore concepts, and learn efficiently through conversational AI.",
+    image: caseStudyMemoneet,
+    tags: ["Student-friendly UI", "AI Q&A Flow", "Personalized UX"],
+    figmaUrl: "https://www.figma.com/design/7hEKTLke8N8JlINI6cY7cn/Memoneet?node-id=0-1&p=f&t=QqurO9iBG97ToELm-0",
   },
   {
     id: 2,
-    title: "Stylehaus E-Commerce",
-    category: "Web Design",
+    title: "CRMS – Customer Relationship Management",
+    category: "Enterprise Web · Dashboard UX",
     description:
-      "Creating a seamless shopping experience that boosted conversion rates by 28% through simplified checkout flow.",
-    image: caseStudy2,
-    tags: ["User Testing", "Design System", "Responsive"],
+      "Designed an enterprise CRM platform with analytics dashboard, lead management flows, and a comprehensive design system.",
+    image: caseStudyCrms,
+    tags: ["Analytics Dashboard", "Lead Management", "Design System"],
+    figmaUrl: "https://www.figma.com/design/sZwFTIoq5RFoKftbacKZ4r/CRM?t=QqurO9iBG97ToELm-0",
   },
   {
     id: 3,
-    title: "Mindful Wellness App",
-    category: "Mobile App Design",
+    title: "CoreCart – Grocery Shopping App",
+    category: "Mobile App · UX · UI",
     description:
-      "Designing a meditation app that helped users build daily habits with 89% retention rate in first month.",
-    image: caseStudy3,
-    tags: ["User Research", "Gamification", "Visual Design"],
+      "A grocery shopping mobile application with user journeys, cart & checkout UX, and high-fidelity Figma designs.",
+    image: caseStudyCorecart,
+    tags: ["User Journeys", "Cart & Checkout UX", "High-fidelity Designs"],
+    figmaUrl: "https://www.figma.com/design/9FugscFLAleakrapGxSQqQ/Galamine-Corecart-Project?t=QqurO9iBG97ToELm-0",
+  },
+  {
+    id: 4,
+    title: "CRMS Storefront",
+    category: "Web · E-commerce UX",
+    description:
+      "E-commerce storefront design featuring product listing, filters, checkout experience, and responsive UI.",
+    image: caseStudyStorefront,
+    tags: ["Product Listing", "Checkout Experience", "Responsive UI"],
+    figmaUrl: "https://www.figma.com/design/sZwFTIoq5RFoKftbacKZ4r/CRM?t=QqurO9iBG97ToELm-0",
   },
 ];
 
@@ -88,9 +102,11 @@ function CaseStudyCard({
           </div>
 
           {/* CTA */}
-          <Button variant="ghost" className="group/btn -ml-4">
-            View Case Study
-            <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+          <Button variant="ghost" className="group/btn -ml-4" asChild>
+            <a href={study.figmaUrl} target="_blank" rel="noopener noreferrer">
+              View in Figma
+              <ExternalLink className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+            </a>
           </Button>
         </div>
       </div>
@@ -112,7 +128,7 @@ export function CaseStudies() {
           className="text-center mb-16"
         >
           <span className="text-label mb-4 inline-block">Portfolio</span>
-          <h2 className="heading-section mb-4">Featured Case Studies</h2>
+          <h2 className="heading-section mb-4">Case Studies</h2>
           <p className="text-body max-w-2xl mx-auto">
             A selection of projects where I tackled complex problems and
             delivered meaningful results through user-centered design.
@@ -120,7 +136,7 @@ export function CaseStudies() {
         </motion.div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {caseStudies.map((study, index) => (
             <CaseStudyCard key={study.id} study={study} index={index} />
           ))}
