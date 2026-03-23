@@ -7,6 +7,7 @@ import caseStudyCrms from "@/assets/case-study-crms.png";
 import caseStudyStorefront from "@/assets/case-study-storefront.png";
 import caseStudyMemoneet from "@/assets/case-study-memoneet.png";
 import caseStudyGrocersGoing from "@/assets/case-study-grocers-going.png";
+import caseStudyContract from "@/assets/case-study-contract.png";
 
 const caseStudies = [
   {
@@ -58,6 +59,16 @@ const caseStudies = [
     image: caseStudyGrocersGoing,
     tags: ["E-commerce", "Grocery Delivery", "Responsive Web"],
     figmaUrl: "https://www.figma.com/design/NuxQADOsT0ljEA4tmAx0yL/Grocers-Going?node-id=0-1&p=f&t=BIcTlXXddNk9VsE2-0",
+  },
+  {
+    id: 6,
+    title: "Contract Page Design",
+    category: "Web · SaaS · Enterprise",
+    description:
+      "A contract management interface featuring deal summaries, e-sign status tracking, business profiles, and banking details with a clean, organized layout.",
+    image: caseStudyContract,
+    tags: ["Contract Management", "E-Sign Flow", "Enterprise UI"],
+    figmaUrl: "https://www.figma.com/design/9jMECPDlqKJz6HRDHTreWz/Untitled?t=BIcTlXXddNk9VsE2-0",
   },
 ];
 
