@@ -7,6 +7,7 @@ import caseStudyCrms from "@/assets/case-study-crms.png";
 import caseStudyStorefront from "@/assets/case-study-storefront.png";
 import caseStudyMemoneet from "@/assets/case-study-memoneet.png";
 import caseStudyGrocersGoing from "@/assets/case-study-grocers-going.png";
+import caseStudyContract from "@/assets/case-study-contract.png";
 
 const caseStudies = [
   {
