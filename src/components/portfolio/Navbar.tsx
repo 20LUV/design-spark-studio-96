@@ -76,6 +76,13 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+            aria-label="Toggle theme"
+          >
+            {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
           <Button variant="hero" size="sm" asChild>
             <a href="#contact">Hire Me</a>
           </Button>
