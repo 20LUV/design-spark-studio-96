@@ -6,6 +6,7 @@ import caseStudyCorecart from "@/assets/case-study-corecart.png";
 import caseStudyCrms from "@/assets/case-study-crms.png";
 import caseStudyStorefront from "@/assets/case-study-storefront.png";
 import caseStudyMemoneet from "@/assets/case-study-memoneet.png";
+import caseStudyGrocersGoing from "@/assets/case-study-grocers-going.png";
 
 const caseStudies = [
   {
@@ -47,6 +48,16 @@ const caseStudies = [
     image: caseStudyStorefront,
     tags: ["Product Listing", "Checkout Experience", "Responsive UI"],
     figmaUrl: "https://www.figma.com/design/sZwFTIoq5RFoKftbacKZ4r/CRM?t=QqurO9iBG97ToELm-0",
+  },
+  {
+    id: 5,
+    title: "Grocers Going – Grocery Website",
+    category: "Web · E-commerce · Grocery",
+    description:
+      "A modern grocery delivery website design with fresh product browsing, easy ordering flow, and a clean green-themed UI.",
+    image: caseStudyGrocersGoing,
+    tags: ["E-commerce", "Grocery Delivery", "Responsive Web"],
+    figmaUrl: "https://www.figma.com/design/NuxQADOsT0ljEA4tmAx0yL/Grocers-Going?node-id=0-1&p=f&t=BIcTlXXddNk9VsE2-0",
   },
 ];
 
